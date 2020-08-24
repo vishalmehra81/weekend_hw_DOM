@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const newCarForm = document.querySelector('#new-car-form');
-  newCarForm.addEventListener('submit', handleNewCarForm);
+  carForm();
+//   const newCarForm = document.querySelector('#new-car-form');
+//   newCarForm.addEventListener('submit', handleNewCarForm);
 
 
   const deleteAllButton = document.querySelector('#delete-all');
@@ -9,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+const carForm = function(){
+const newCarForm = document.querySelector('#new-car-form');
+  newCarForm.addEventListener('submit', handleNewCarForm);
+};
 const handleNewCarForm = function (event) {
   event.preventDefault();
 
