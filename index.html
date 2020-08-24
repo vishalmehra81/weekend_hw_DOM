@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motopedia</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+  <h1>MOTOPEDIA</h1>
+  <form id="new-car-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="make" class="primary">Make</label>
+        <input type="text" id="make" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="model" class="primary">Model</label>
+        <input type="text" id="model" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="country" class="primary">Country</label>
+        <input type="text" id="country" required/>
+      </div>
+
+      <div class="form-item">
+        <h4> Body Type</h4>
+        <input type="checkbox" id="body" name="body" value="Hatchback">
+        <label for="hatchback">Hatchback</label><br>
+        <input type="checkbox" id="body" name="body" value="Saloon">
+        <label for="saloon">Saloon</label><br>
+        <input type="checkbox" id="body" name="body" value="SUV">
+        <label for="suv">SUV</label><br>
+        <input type="checkbox" id="body" name="body" value="Estate">
+        <label for="estate">Estate</label><br>
+      </div>
+
+      <div class="form-item">
+        <h4>Fuel Type</h4>
+        <input type="radio" id="fuel" name="fuel" value="Petrol">
+        <label for="petrol">Petrol</label><br>
+        <input type="radio" id="fuel" name="fuel" value="Diesel">
+        <label for="diesel">Diesel</label><br>
+        <input type="radio" id="fuel" name="fuel" value="Hybrid">
+        <label for="hybrid">Hybrid</label><br>
+        <input type="radio" id="fuel" name="fuel" value="Electric">
+        <label for="electric">Electric</label><br>
+      </div>
+
+      <div class="form-item">
+        <h4>Gear Box</h4>
+        <input type="radio" id="gear" name="gear" value="Manual">
+        <label for="manual">Manual</label><br>
+        <input type="radio" id="gear" name="gear" value="Auto">
+        <label for="auto">Auto</label><br>
+      </div>
+
+      <div class="form-item">
+        <label for="engine" class="primary">Engine Size</label>
+        <select id="engine">
+          <option value="" disabled selected>Select</option>
+          <option value="1.2 Litre">1.2 Litre</option>
+          <option value="1.6 Litre">1.6 Litre</option>
+          <option value="1.8 Litre">1.8 Litre</option>
+          <option value="2.0 Litre">2.0 Litre</option>
+          <option value="2.2 Litre">2.2 Litre</option>
+          <option value="2.4 Litre">2.4 Litre</option>
+          <option value="2.6 Litre">2.6 Litre</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="Go Vroom"/>
+  </form>
+  <button id="delete-all">Delete All</button>
+
+  <h1>CAR DETAILS</h1>
+  <ul id="car-detail"></ul>
+
+    
+</body>
+</html>
